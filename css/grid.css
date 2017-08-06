@@ -1,0 +1,67 @@
+/*Box sizing for all sections*/
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+/*Dimensions based on min and max viewpoints*/
+body {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.row {
+  padding: 10px;
+  width: 100%;
+  min-height: 1px;
+  float: left;
+
+}
+
+.col {
+  background: #bdc3c7;
+  min-height: 40px;
+  margin-left: 1%;
+  margin-right: 1%;
+  display: inline-block;
+  float: left;
+  padding: 10px;
+
+}
+
+/*Remove left margin from first column*/
+.col:first-child {
+  margin-left: 0;
+}
+
+/*Remove right margin from last column*/
+.col:last-child {
+  margin-right: 0;
+}
+
+/*CSS classes for each column size*/
+.col-1 {width: 6.5%;}
+.col-2 {width: 15%;}
+.col-3 {width: 23.5;}
+.col-4 {width: 32%;}
+.col-5 {width: 40.42%;}
+.col-6 {width: 49%;}
+.col-7 {width: 57.58%;}
+.col-8 {width: 66%;}
+.col-9 {width: 74.5%;}
+.col-10 {width: 83%;}
+.col-11 {width: 91.5%;}
+.col-12 {width: 100%;}
+
+/*Breaking point for mobile view*/
+@media (max-width: 768px) {
+  .col {
+    width: 100% !important;
+    margin: 5px 0;
+  }
+}
